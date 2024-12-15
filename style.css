@@ -1,0 +1,45 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit
+}
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px auto;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 68%;
+    
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.top-contact-item {
+    width: 33%;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 28%;
+}
+
+/* .links {
+
+} */
