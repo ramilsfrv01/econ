@@ -111,6 +111,13 @@ span {
 .quote-items-head {
     font-size: 16px;
 }
+.quote-items-head i {
+    display: inline-block;
+    margin-right: 8px;
+}
+.quote-items-head span {
+    font-weight: 500;
+}
 
 .quote-items-box p {
     color:#929292;
@@ -142,12 +149,6 @@ span {
     display:block;
     font-size: 13px;
 }
-.home-header{
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    overflow: hidden;
-}
 nav {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.75);
@@ -156,6 +157,7 @@ nav {
     /* bottom: 0; */
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 .nav-box {
@@ -179,44 +181,56 @@ nav {
     display: block;
 }
 
-.bg {
-    background: url('../upload/slider-1.jpg') no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: cover;
+.home-header{
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 78.1vh;
+    overflow: hidden;
+    background-color: black;
 }
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%;
+    /* transform: translateX(-100%); */
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .slide {
-    flex: 1 0 100%;
-    height: 75vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 1s ease-in-out;
 }
 
-.home-header button {
+.slide.active {
+    opacity: 1;
+    /* position: relative; */
+}
+
+.home-header span {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
     color:white;
-    border: none;
-    font-size: 16px;
+    font-size: 48px;
     cursor: pointer;
+    font-weight: normal;
     z-index: 10;
-    padding: 10px;
 }
 
+
 .prev {
-    left: 10px;
+    left: 36px;
 }
 
 .next {
-    right: 10px;
+    right: 36px;
 }
