@@ -10,6 +10,11 @@ a {
     text-decoration: none;
     color:inherit
 }
+
+img {
+    display: block;
+    width: 100%;
+}
 .container {
     max-width: 960px;
     width: 100%;
@@ -40,6 +45,7 @@ a {
     width: 28%;
 }
 
-/* .links {
-
-} */
+nav {
+    margin: 0;
+    padding: 48px 0;
+}
