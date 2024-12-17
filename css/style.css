@@ -163,6 +163,7 @@ nav {
     justify-content: flex-start;
     align-items: center;
     padding: 20px 0;
+    cursor: pointer;
 }
 .nav-item {
     color: white;
@@ -171,6 +172,28 @@ nav {
     font-weight: 450;
     padding: 8px 36px 8px;
     opacity: 1;
+    cursor: pointer;
+    /* position: relative; */
+}
+.nav-item a {
+    /* display: block; */
+    position: relative;
+}
+.nav-item a::before{
+    content: "";
+    width: 0%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fcb401;
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    transition: 0.17s ease-in;
+    transition: 0.3 ease-out;
+}
+
+.nav-item:hover a::before {
+    width: 100%;
 }
 .nav-item:first-child {
     padding-left: 0;
