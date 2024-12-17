@@ -5,7 +5,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     background: #dfdfdf96;
-    font-family: "Poppins";
+    font-family: 'Poppins';
 }
 
 a {
@@ -45,9 +45,7 @@ span {
     padding: 28px 0 10px;
 }
 
-/* .top-contact-item {
-    width: 35%;
-} */
+
 .top-contact-item i{
     display: inline-block;
     margin-right: 14px;
