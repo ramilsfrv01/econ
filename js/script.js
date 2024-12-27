@@ -1,12 +1,11 @@
 const slides = document.querySelectorAll('.slide');
-const titles = document.querySelectorAll('.slide-title');
+const titles = document.querySelectorAll('.top-title');
 let currentIndex = 0;
 let totalSlides = slides.length;
 
 // Initially set the first slide to active
 slides[currentIndex].classList.add('active');
 titles[currentIndex].classList.add('active');
-
 // Buttons for navigation
 document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
 document.querySelector('.next').addEventListener('click', () => changeSlide(1));
@@ -16,13 +15,13 @@ function changeSlide(direction) {
   // Hide the current slide and title
   slides[currentIndex].classList.remove('active');
   titles[currentIndex].classList.remove('active');
-
   // Calculate the next slide index with infinite scrolling
   currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
 
   // Show the new slide and title
-  slides[currentIndex].classList.add('active');
-  titles[currentIndex].classList.add('active');
+  setTimeout(() => {
+    titles[currentIndex].classList.add('active');
+    slides[currentIndex].classList.add('active');  }, 300); // Delay to match the CSS transition duration
 }
 
 // let autoplay = setInterval(() => changeSlide(1), 5000); // Auto-slide every 5 seconds
@@ -32,4 +31,4 @@ function changeSlide(direction) {
 // document.querySelector('.slides').addEventListener('mouseout', () => {
   //   autoplay = setInterval(() => changeSlide(1), 5000);
   // });
-  
+
