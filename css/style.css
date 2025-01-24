@@ -273,11 +273,11 @@ nav {
 }
 
 .prev {
-    left: -20%;
+    left: -10%;
 }
 
 .next {
-    right: -20%;
+    right: -10%;
 }
 
 .slide-button:hover {
@@ -367,4 +367,25 @@ nav {
 
 .slide-title p i {
     font-size: 24px;
+}
+
+section.top-wrap {
+    background: url(../upload/top-wrap-1.jpg) no-repeat center;
+    background-size:cover;
+}
+
+.wrap-bg {
+    background-color: #fcb501c5;
+    padding: 48px 0px;
+}
+
+.topic-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+
+.topic p {
+    color:inherit;
 }
