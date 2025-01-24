@@ -388,4 +388,37 @@ section.top-wrap {
 
 .topic p {
     color:inherit;
+    font-weight: 400;
+}
+
+.services-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    max-height: 25%;
+    padding: 48px 0px;
+}
+
+.services-box {
+    height: 100%;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services-bg {
+    height: 70%;
+    width: 100%;
+    border-radius: 3px;
+    border:0;
+    padding-bottom: 24px;
+}
+
+.service-bg img {
+    
 }
