@@ -1,11 +1,11 @@
 body {
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     line-height: 1.5;
     font-size: 16px;
-    background: #dfdfdf96;
     font-family: 'Poppins';
+    position: relative;
 }
 
 h1,
@@ -37,7 +37,7 @@ span {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     padding: 60px auto;
@@ -50,13 +50,16 @@ span {
     justify-content: space-between;
     width: 71%;
 }
+.head-wrap {
+    background: #dfdfdf96;
 
+}
 .top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 0 10px;
+    padding: 28px 0;
 }
 
 
@@ -69,7 +72,7 @@ span {
 
 .links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 20%;
 }
 
@@ -167,16 +170,18 @@ span {
     display: block;
 }
 
-nav {
+nav.navbar {
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    position: absolute;
+    background-color: #000;
+    position:sticky;
+    position: -webkit-sticky;
     top: 0;
-    /* bottom: 0; */
     left: 0;
     right: 0;
     z-index: 20;
+    transition: 0.3s ease-in-out;
 }
+
 
 .nav-box {
     display: flex;
@@ -387,38 +392,178 @@ section.top-wrap {
 }
 
 .topic p {
-    color:inherit;
+    color:#000;
     font-weight: 400;
+}
+section.services {
+    background-color: #dfdfdf96;
 }
 
 .services-wrap {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
-    max-height: 25%;
-    padding: 48px 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 64px 0px;
 }
 
 .services-box {
-    height: 100%;
+    width: 30%;
+    margin-bottom: 124px;
 }
 
+.services-wrap .services-box:nth-child(3n + 1) {
+    margin-left: 0;
+}
 .services-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    height: 10.2rem;
 }
 
 .services-bg {
-    height: 70%;
+    height: 100%;
     width: 100%;
-    border-radius: 3px;
     border:0;
-    padding-bottom: 24px;
+    position: relative;
 }
 
-.service-bg img {
-    
+.services-bg img {
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+.services-head * {
+    text-align: center;
+}
+.services-head h4 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom:4px;
+    padding-top: 17px;
+    letter-spacing: 0.5px;
+
+}
+
+.services-head span {
+    color:#929292;
+    font-size: 13px;
+}
+.overlay {
+    background-color: #fcb4017a;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 15;
+    border-radius: 3px;
+}
+.services-bg:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    transition: 0.3s ease-in-out;
+}
+section.content-section {
+    background: #fff;
+    padding: 24px 0;
+}
+.content-wrap {
+    padding: 48px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.content-box {
+    width: 47.5%;
+}
+
+.content-head {
+    text-transform: capitalize;
+}
+
+.content-head h5 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 32px;
+}
+
+.content-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #929292;
+    padding: 28px 0;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+.content-btn {
+    padding: 16px 0;
+}
+.content-btn .main-button {
+    background:none;
+    color:#fcb401;
+}
+
+.text-head {
+    font-size: 22px;
+    font-weight: lighter;
+    padding-bottom: 26px;
+    text-transform: capitalize;
+    color:#444444
+}
+
+/* .content-tabs {
+} */
+
+.content-tab {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 32px;
+
+}
+.content-icon {
+    width: 17%;
+    padding-right: 24px;
+}
+
+.content-icon i {
+    display: block;
+    font-size: 32px;
+    color: #fcb501d3;
+}
+
+.content-tabs-text {
+    color: #929292;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
 }

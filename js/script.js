@@ -32,3 +32,14 @@ function changeSlide(direction) {
   //   autoplay = setInterval(() => changeSlide(1), 5000);
   // });
 
+
+let navbar = document.getElementsByName("nav");
+
+window.onscroll = function() {
+  if (window.scrollY >= 212) {
+    navbar.style.opacity = 0.2;
+  }
+  else {
+    navbar.style.opacity = 1;
+  }
+};
