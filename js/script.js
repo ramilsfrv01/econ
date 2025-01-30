@@ -34,12 +34,13 @@ function changeSlide(direction) {
 
 
 let navbar = document.getElementsByName("nav");
+let navStyle = navbar.style.opacity
 
 window.onscroll = function() {
   if (window.scrollY >= 212) {
-    navbar.style.opacity = 0.2;
+    navStyle = 0.2;
   }
   else {
-    navbar.style.opacity = 1;
+    navStyle = 1;
   }
 };
