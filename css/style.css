@@ -740,3 +740,43 @@ section.project-section {
     justify-content: center;
     align-items: center;
 }
+
+section.career-section {
+    background: url(../upload/career-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 48px 0;
+    position: relative;
+    text-align: center;
+}
+
+.career-head h5 {
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 32px;
+    color: #fcb401;
+}
+
+.career-text p {
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 38px;
+}
+
+.career-btn .main-button {
+    width: initial;
+    height: initial;
+    padding: 16px 24px;
+    background-color: transparent;
+    color:#fcb401;
+    font-weight: 600;
+    border-width: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease-in-out;
+}
+
+.career-btn .main-button:hover {
+    background-color: #fcb401;
+    color: #fff;
+}
