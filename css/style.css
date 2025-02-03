@@ -70,9 +70,12 @@ span {
     display: inline-block;
     margin-right: 14px;
     color: #fcb401;
-
 }
 
+.top-contact-item a {
+    color:#000;
+    font-size: 13px;
+}
 .links {
     display: flex;
     justify-content: space-between;
@@ -522,6 +525,7 @@ section.content-section {
     padding: 28px 0;
     letter-spacing: 0.5px;
     line-height: 1.8;
+    text-align: justify;
 }
 
 .content-btn {
@@ -566,6 +570,9 @@ section.content-section {
     line-height: 1.8;
 }
 
+.text p {
+    text-align: justify;
+}
 section.project-section {
     background: url(../upload/project-bg.jpg) no-repeat center;
     background-attachment: fixed;
@@ -731,10 +738,11 @@ section.project-section {
     align-items: center;
     flex-wrap: nowrap;
     padding: 3rem  0;
+    filter: grayscale(100%);    
 }
 
 .partner-box {
-    width: 10.5%;
+    width: 8.5%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -746,13 +754,25 @@ section.career-section {
     background-size: cover;
     padding: 48px 0;
     position: relative;
-    text-align: center;
+}
+.career-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 48px 0 16px;
+}
+.career-box {
+    width: 45.5%;
 }
 
+.career-head {
+    padding-top: 16px;
+    text-align: center;
+}
 .career-head h5 {
     font-size: 28px;
     font-weight: 400;
-    padding-bottom: 32px;
     color: #fcb401;
 }
 
@@ -760,8 +780,12 @@ section.career-section {
     font-size: 16px;
     color: #fff;
     padding-bottom: 38px;
+    text-align: justify;
 }
 
+.career-btn {
+    margin-top: 18px;
+}
 .career-btn .main-button {
     width: initial;
     height: initial;
@@ -770,7 +794,7 @@ section.career-section {
     color:#fcb401;
     font-weight: 600;
     border-width: 2px;
-    font-size: 16px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: 0.2s ease-in-out;
@@ -779,4 +803,36 @@ section.career-section {
 .career-btn .main-button:hover {
     background-color: #fcb401;
     color: #fff;
+}
+
+.opening-job h5::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 1px;
+    background-color: #fcb5019a;
+    margin-top: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.opening-job {
+    color:#fff;
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 48px;
+}
+.opening-job h5 {
+    position: relative;
+}
+.opening-job a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.opening-job h5:hover::after {
+    background-color: #fcb401;
 }
