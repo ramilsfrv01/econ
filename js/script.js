@@ -42,5 +42,6 @@ window.onscroll = function() {
   }
   else {
     navStyle = 1;
-  }
-};
+}
+
+
