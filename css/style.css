@@ -633,6 +633,7 @@ section.project-section::after {
     align-items: center;
     flex-wrap: nowrap;
     padding: 48px 0;
+    width: ;
 }
 
 .project-box {
