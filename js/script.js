@@ -33,4 +33,19 @@ function changeSlide(direction) {
   // });
 
 
+let projectSlidesWrapper = document.querySelector('.project-wrap');
+let projectSlideBox = document.getElementsByClassName('.project-box')
 
+
+
+function projectSlider(direction) {
+  projectSlidesWrapper.style.transform = `translateX(${direction * 25}%)`;
+  currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+  
+  
+  
+}
+
+document.querySelector('.project-prev').addEventListener('click', () => projectSlider(-1));
+document.querySelector('.project-next').addEventListener('click', () => projectSlider(1));
+console.log(projectSlideBox.offsetWidth);
