@@ -13,8 +13,8 @@
     <meta name="robots" content="index, follow">
     <!-- <base href="https://econstructiongroup.com/"> -->
     <script src="https://kit.fontawesome.com/9c029c00c1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/flickity.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Add these lines in your HTML head -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -348,12 +348,6 @@
         </div>
     </section>
     <section class="project-section">
-        <div class="project-btn project-prev">
-            <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div class="project-btn project-next">
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
         <div class="container">
             <div class="project-head">
                 <h5>Supported Projects</h5>
@@ -361,7 +355,37 @@
                 <i class="fa-solid fa-arrow-right-long" style="transition: 0.3s ease; display: inline-block;"></i>
             </div>
         </div>
-        <div class="projects-container">
+        <div class="splide container" id="image-slider" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide project-box splide-project-wrap">
+                        <div class="project-bg">
+                            <div class="project-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
+                            <img src="upload/project-bg-2.jpg" alt="" class="project-img">
+                        </div>
+                        <div class="project-alt">
+                            <h6>Project Name</h6>
+                            <span>Project Location</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide project-box">
+                        <div class="project-bg">
+                            <div class="project-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
+                            <img src="upload/project-bg-2.jpg" alt="" class="project-img">
+                        </div>
+                        <div class="project-alt">
+                            <h6>Project Name</h6>
+                            <span>Project Location</span>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <!-- <div class="projects-container">
             <div class="project-wrap">
                 <div class="project-box">
                     <div class="project-bg">
@@ -399,7 +423,6 @@
                         <span>Project Location</span>
                     </div>
                 </div>
-                
                 <div class="project-box">
                     <div class="project-bg">
                         <div class="project-overlay">
@@ -413,7 +436,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <section class="partner-section">
         <div class="container">
@@ -536,9 +559,9 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>  
+    <script src="js/script.js" defer></script>
 </body>
-<script src="js/script.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-<script src="js/flickity.pkgd.min.js" type="script" defer></script>
 
 </html>

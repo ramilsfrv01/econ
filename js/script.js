@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.slide');
 const titles = document.querySelectorAll('.top-title');
 let currentIndex = 0;
@@ -33,19 +34,29 @@ function changeSlide(direction) {
   // });
 
 
-let projectSlidesWrapper = document.querySelector('.project-wrap');
-let projectSlideBox = document.getElementsByClassName('.project-box')
 
 
 
-function projectSlider(direction) {
-  projectSlidesWrapper.style.transform = `translateX(${direction * 25}%)`;
-  currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-  
-  
-  
-}
 
-document.querySelector('.project-prev').addEventListener('click', () => projectSlider(-1));
-document.querySelector('.project-next').addEventListener('click', () => projectSlider(1));
-console.log(projectSlideBox.offsetWidth);
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#image-slider', {
+    type: 'loop',
+    pagination: true,
+    perPage: 3,
+    height: '100%',
+    arrows: true,
+    keyboard: 'global',
+    breakpoints: {
+      640: {
+        perPage: 2,
+      }
+    },
+    paginationDirection: 'ltr',
+    paginationPosition: 'bottom',
+  }).mount();
+});
