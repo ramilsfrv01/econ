@@ -15,7 +15,6 @@
 
 .head-wrap {
     background: #dfdfdf96;
-
 }
 
 .top {
@@ -83,6 +82,10 @@
     border-right: 0;
     margin-right: 0;
     padding-right: 0;
+}
+
+.quote-items-box-mobile {
+    display: none;
 }
 
 .quote-items-box {
@@ -993,4 +996,151 @@ footer {
     background: #fcb401;  /* Active dot in your theme color */
     transform: scale(1.2);
     opacity: 1;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu img {
+    color: #c9c9c9;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.mobile-navbar {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+}
+
+.mobile-navbar .mobile-nav-box {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.mobile-navbar .mobile-nav-box .mobile-nav-item {
+    /* background: #8d8d8d; */
+    padding: 16px;
+    text-transform: uppercase;
+    color: #000;
+    width: 100%;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.mobile-nav-item:hover {
+    background-color: #fcb401;
+    color: #fff;
+}
+
+.mobile-nav-item:hover a {
+    transform: translateX(16px);
+}
+.mobile-nav-item:focus {
+    background-color: #fcb401;
+    color: #fff;
+}
+.mobile-nav-item:active {
+    background-color: #fcb401;
+    color: #fff;
+}
+
+.mobile-nav-item a {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.mobile-nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    width: 75%;
+    height: 1px;
+    background-color: #0000001e;
+    box-shadow: 0 0 3px 0 rgba(180, 180, 180, 0.144);
+    margin-top: 16px;
+}
+
+.mobile-nav-item:last-child::after {
+    display: none;
+}
+
+.menu-close  img {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.body-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000093;
+    z-index: 9;
+    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
+}
+.mobile-navbar-overlay {
+    transition: 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 14px;
+    }
+    .head-wrap {
+        display: none;
+    }
+    
+    .logo {
+        padding: 16px 0;
+        width: 50%;
+    }
+
+    .quote-items {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    .career-wrap {
+        flex-direction: column;
+    }
+    .career-box {
+        width: 100%;
+    }
 }
