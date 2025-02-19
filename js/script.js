@@ -25,13 +25,13 @@ function changeSlide(direction) {
     slides[currentIndex].classList.add('active');  }, 300); // Delay to match the CSS transition duration
 }
 
-let autoplay = setInterval(() => changeSlide(1), 5000); // Auto-slide every 5 seconds
+// let autoplay = setInterval(() => changeSlide(1), 5000); // Auto-slide every 5 seconds
 
-// Stop autoplay when mouse is hovering over the slides
-document.querySelector('.slides').addEventListener('mouseover', () => clearInterval(autoplay));
-document.querySelector('.slides').addEventListener('mouseout', () => {
-    autoplay = setInterval(() => changeSlide(1), 5000);
-  });
+// // Stop autoplay when mouse is hovering over the slides
+// document.querySelector('.slides').addEventListener('mouseover', () => clearInterval(autoplay));
+// document.querySelector('.slides').addEventListener('mouseout', () => {
+//     autoplay = setInterval(() => changeSlide(1), 5000);
+//   });
 
 
 
@@ -62,10 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-window.addEventListener('scroll', () => {
-  console.log(window.scrollY);
-});
-
 
 let closeBtn = document.querySelector('.menu-close');
 let openBtn = document.querySelector('.mobile-menu');
@@ -76,12 +72,22 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', closeMobileNav);
 
 function openMobileNav() {
-  document.querySelector('.mobile-navbar').style.width = '50%';
+  document.querySelector('.mobile-navbar').style.width = '47.5%';
   document.querySelector('.mobile-navbar-overlay').classList.add('body-overlay');
 }
 
 function closeMobileNav() {
   document.querySelector('.mobile-navbar').style.width = '0%';
   document.querySelector('.mobile-navbar-overlay').classList.remove('body-overlay');
-
 }
+
+// function onScroll_navBg() {
+
+//   if (window.scrollY >= 102) {
+//     document.querySelector('.header-overlay').style.height = '100%';
+//   } else {
+//     document.querySelector('.header-overlay').style.height = '0%';
+//   }
+// }
+
+// document.addEventListener('scroll', onScroll_navBg);
