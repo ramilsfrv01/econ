@@ -246,11 +246,11 @@ nav.navbar {
 }
 
 .prev {
-    left: -10%;
+    left: 10%;
 }
 
 .next {
-    right: -10%;
+    right: 10%;
 }
 
 .slide-button:hover {
@@ -259,6 +259,8 @@ nav.navbar {
 }
 
 .slide-title {
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1015,12 +1017,15 @@ footer {
 
 .menu-close {
     cursor: pointer;
+    /* height: 100%; */
+    width: 100%;
 }
 .mobile-menu img {
     color: #c9c9c9;
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .mobile-navbar {
@@ -1102,9 +1107,11 @@ footer {
     width: 28px;
     height: 28px;
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 4%;
+    right: 10%;
     cursor: pointer;
+    border-radius: 50%;
+    color:#fcb401
 }
 
 .body-overlay {
@@ -1146,18 +1153,40 @@ footer {
     }
 }
 
-
-
+.header-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #00000093;
+    z-index: 5;
+    transition: 0.2s ease-in-out;
+}
+.mobile-navbar-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 24;
+}
 /* ############################################# */
 @media screen and (max-width: 768px) {
     .container {
-        width: auto;
-        padding: 0 14px;
+        width: 90%;
     }
     .logo-header {
         position: sticky;
         top: 0;
         z-index: 20;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .header-overlay {
+        display: block;
     }
     .head-wrap {
         display: none;
@@ -1230,7 +1259,6 @@ footer {
     }
 
     .services-box {
-        width: 48%;
         margin-bottom: 96px;
     }
 
@@ -1245,23 +1273,34 @@ footer {
         font-size: 10px;
     }
 
+    .overlay i {
+        font-size: 24px;
+    }
     .content-wrap {
         padding: 36px 0 18px;
     }
 
+    .splide__arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    .partner-wrap {
+        display: none;
+    }
+    .partner-box {
+        width: 100%;
+    }
+    .partner-box img {
+        width: 50%;
+    }
+    
+  
+
     .content-box {
         width: 100%;
     }
-    .header-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0%;
-        background-color: #00000093;
-        z-index: 10;
-        transition: 0.2s ease-in-out;
-    }
+    
  
     .career-wrap {
         flex-direction: column;
@@ -1269,5 +1308,93 @@ footer {
 
     .career-box {
         width: 100%;
+    }
+    footer {
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        justify-content:start;
+    }
+    .footer-logo img {
+        width: 40px;
+        height: 40px;
+        margin: auto 0;
+    }
+    .logo-alt p {
+        font-size: 12px;
+        text-align: left;
+    }
+    .footer-links a {
+        font-size: 12px;
+    }
+    .footer-box h5 {
+        font-size: 12px;
+    }
+    .link {
+        padding-bottom: 4px;
+    }
+    .sector a {
+        padding-bottom: 4px;
+        font-size: 12px;
+    }
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-contact .top-contact-item a {
+        font-size: 8px;
+    }
+    .footer-contact .top-contact-item i {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 60%;
+    }
+
+    .career-text p {
+        font-size: 12px;
+    }
+    .opening-job h5 {
+        font-size: 16px;
+    }
+
+    #partner-slider {
+        padding: 16px 0;
+    }
+    .project-head h5 {
+        font-size: 22px;
+    }
+    .content-tabs-text {
+        font-size: 10px;
+    }
+    .content-text {
+        font-size: 12px;
+    }
+    section.content-section {
+        padding: 0;
+    }
+    .text-head {
+        padding-bottom: 10px;
+    }
+    .content-head h5 {
+        padding-top: 24px;
+        padding-bottom: 10px;
+    }
+    
+    .services-box {
+        width: 100%;
+    }
+    .services-item {
+        height: 8rem;
+    }
+    .services-head h4 {
+        font-size: 10px;
     }
 }

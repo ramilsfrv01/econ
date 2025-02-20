@@ -22,7 +22,8 @@ function changeSlide(direction) {
   // Show the new slide and title
   setTimeout(() => {
     titles[currentIndex].classList.add('active');
-    slides[currentIndex].classList.add('active');  }, 300); // Delay to match the CSS transition duration
+    slides[currentIndex].classList.add('active');
+  }, 300); // Delay to match the CSS transition duration
 }
 
 // let autoplay = setInterval(() => changeSlide(1), 5000); // Auto-slide every 5 seconds
@@ -40,28 +41,54 @@ function changeSlide(direction) {
 
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#image-slider', {
     type: 'loop',
-    pagination: true,
     perPage: 3,
+    perMove: 1,
+    pagination: false,
+    easing: 'ease',
+    transition: 'fade',
+    easingFunc: 'ease',
     height: '100%',
+    autoplay: true,
+    interval: 3000,
+    pauseOnHover: true,
     arrows: true,
-    keyboard: 'global',
     breakpoints: {
       640: {
         perPage: 2,
-      }
+      },
+      480: {
+        perPage: 1,
+      },
     },
     paginationDirection: 'ltr',
     paginationPosition: 'bottom',
   }).mount();
 });
 
-
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#partner-slider', {
+    type: 'loop',
+    perPage: 3,
+    perMove: 1,
+    arrows: false,
+    direction: 'rtl',
+    pagination: false,
+    pauseOnHover: true,
+    easing: 'ease',
+    transition: 'fade',
+    easingFunc: 'ease',
+    autoplay: true,
+    interval: 3000,
+    breakpoints: {
+      480: {
+        perPage: 2,
+      }
+    },
+  }).mount();
+});
 
 let closeBtn = document.querySelector('.menu-close');
 let openBtn = document.querySelector('.mobile-menu');
@@ -70,6 +97,7 @@ openBtn.addEventListener('click', () => {
   openMobileNav();
 });
 closeBtn.addEventListener('click', closeMobileNav);
+document.querySelector('.mobile-navbar-layer').addEventListener('click', closeMobileNav);
 
 function openMobileNav() {
   document.querySelector('.mobile-navbar').style.width = '47.5%';
@@ -81,13 +109,13 @@ function closeMobileNav() {
   document.querySelector('.mobile-navbar-overlay').classList.remove('body-overlay');
 }
 
-// function onScroll_navBg() {
+function onScroll_navBg() {
 
-//   if (window.scrollY >= 102) {
-//     document.querySelector('.header-overlay').style.height = '100%';
-//   } else {
-//     document.querySelector('.header-overlay').style.height = '0%';
-//   }
-// }
+  if (window.scrollY >= 60) {
+    document.querySelector('.header-overlay').style.height = '100%';
+  } else {
+    document.querySelector('.header-overlay').style.height = '0%';
+  }
+}
 
-// document.addEventListener('scroll', onScroll_navBg);
+document.addEventListener('scroll', onScroll_navBg);
