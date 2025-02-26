@@ -102,9 +102,9 @@
     <div class=" mobile-navbar-overlay"></div>
     <div class="mobile-navbar-layer"></div>
     <nav class="mobile-navbar">
-        <div class="menu-close">
+        <!-- <div class="menu-close">
             <img src="images/menu-bar.svg" alt="Close">
-        </div>
+        </div> -->
         <div class="mobile-nav-box">
             <div class="mobile-nav-item">
                 <a href="index.html">home</a>
@@ -152,33 +152,40 @@
         </div>
     </nav>
     <header class="home-header">
-        <div class="slides">
-            <span class="prev">
-                <i class="fa-solid fa-chevron-left"></i>
-            </span>
-            <span class="next">
-                <i class="fa-solid fa-chevron-right"></i>
-            </span>
-            <div class="slide" style="background-image: url('./upload/slider-1.jpg');">
-                <div class="slide-title">
-                    <span class="top-title">Welcome to</span>
-                    <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
-                    <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('./upload/slider-2.jpg');">
-                <div class="slide-title">
-                    <span class="top-title">Scaffolding</span>
-                    <!-- <h1>ECONGroup</h1>
-                            <p>Across All Over Europe. <br><i>Providing scaffolding, welding and insulating professionals</i></p> -->
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('./upload/slider-3.jpg');">
-                <div class="slide-title">
-                    <span class="top-title">Layher Systems</span>
-                    <!-- <h1>ECONGroup</h1>
-                            <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p> -->
-                </div>
+        <div class="splide" id="header-slider" aria-label="Header Slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" style="background: url(./upload/slider-1.jpg);">
+                        <div class="slide">
+                            <!-- <img src="/upload/slider-3.jpg" alt="Welcome to ECONGroup"> -->
+                            <div class="slide-title">
+                                <span class="top-title">Welcome to</span>
+                                <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
+                                <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide" style="background: url(./upload/slider-2.jpg);">
+                        <div class="slide">
+                            <!-- <img src="/upload/slider-1.jpg" alt="Welcome to ECONGroup"> -->
+                            <div class="slide-title">
+                                <span class="top-title">Welcome to</span>
+                                <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
+                                <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide" style="background: url(./upload/slider-3.jpg);">
+                        <div class="slide">
+                            <!-- <img src="/upload/slider-2.jpg" alt="Welcome to ECONGroup"> -->
+                            <div class="slide-title">
+                                <span class="top-title">Welcome to</span>
+                                <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
+                                <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -533,13 +540,13 @@
                 <div class="footer-box">
                     <div class="footer-sectors">
                         <h5>Our Sectors</h5>
-                        <div class="sector">
+                        <div class="link sector">
                             <a href="scaffolding.html">Scaffolding</a>
                         </div>
-                        <div class="sector">
+                        <div class="link sector">
                             <a href="welding.html">Welding</a>
                         </div>
-                        <div class="sector">
+                        <div class="link sector">
                             <a href="insulating.html">Insulating</a>
                         </div>
                     </div>
