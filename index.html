@@ -14,9 +14,10 @@
     <!-- <base href="https://econstructiongroup.com/"> -->
     <script src="https://kit.fontawesome.com/9c029c00c1.js" crossorigin="anonymous"></script>
     <!-- Add these lines in your HTML head -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -100,11 +101,7 @@
         </div>
     </div>
     <div class=" mobile-navbar-overlay"></div>
-    <div class="mobile-navbar-layer"></div>
     <nav class="mobile-navbar">
-        <!-- <div class="menu-close">
-            <img src="images/menu-bar.svg" alt="Close">
-        </div> -->
         <div class="mobile-nav-box">
             <div class="mobile-nav-item">
                 <a href="index.html">home</a>
@@ -152,37 +149,28 @@
         </div>
     </nav>
     <header class="home-header">
-        <div class="splide" id="header-slider" aria-label="Header Slider">
+        <div class="splide" id="header-slider" aria-labelledby="carousel-heading">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide" style="background: url(./upload/slider-1.jpg);">
-                        <div class="slide">
-                            <!-- <img src="/upload/slider-3.jpg" alt="Welcome to ECONGroup"> -->
-                            <div class="slide-title">
-                                <span class="top-title">Welcome to</span>
-                                <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
-                                <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
-                            </div>
+                    <li class="splide__slide" style="background: url('./upload/slider-1.jpg');">
+                        <div class="slide-title">
+                            <span class="top-title">Welcome to</span>
+                            <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
+                            <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
                         </div>
                     </li>
-                    <li class="splide__slide" style="background: url(./upload/slider-2.jpg);">
-                        <div class="slide">
-                            <!-- <img src="/upload/slider-1.jpg" alt="Welcome to ECONGroup"> -->
-                            <div class="slide-title">
-                                <span class="top-title">Welcome to</span>
-                                <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
-                                <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
-                            </div>
+                    <li class="splide__slide" style="background: url('./upload/slider-2.jpg');">
+                        <div class="slide-title">
+                            <span class="top-title">Scaffolding</span>
+                            <h1>ECONGroup</h1>
+                            <p>Across All Over Europe. <br><i>Providing scaffolding, welding and insulating professionals</i></p>
                         </div>
                     </li>
-                    <li class="splide__slide" style="background: url(./upload/slider-3.jpg);">
-                        <div class="slide">
-                            <!-- <img src="/upload/slider-2.jpg" alt="Welcome to ECONGroup"> -->
-                            <div class="slide-title">
-                                <span class="top-title">Welcome to</span>
-                                <h1 class="main-left">ECON</h1><span class="main-right">Group</span>
-                                <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
-                            </div>
+                    <li class="splide__slide" style="background: url('./upload/slider-3.jpg');">
+                        <div class="slide-title">
+                            <span class="top-title">Layher Systems</span>
+                            <h1>ECONGroup</h1>
+                            <p>Across All Over Europe. <i>Providing scaffolding, welding and insulating professionals</i></p>
                         </div>
                     </li>
                 </ul>
@@ -574,7 +562,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js" defer></script>
     <script src="js/script.js" defer></script>
 </body>
 
