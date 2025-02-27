@@ -1,11 +1,7 @@
-'use strict';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
-
-
-
-
-
-
+// AOS.init();
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#header-slider' , {
@@ -67,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
 let openBtn = document.querySelector('.mobile-menu');
 
 openBtn.addEventListener('click', () => {
@@ -84,3 +79,6 @@ function closeMobileNav() {
   document.querySelector('.mobile-navbar').style.width = '0%';
   document.querySelector('.mobile-navbar-overlay').classList.remove('body-overlay');
 }
+
+
+

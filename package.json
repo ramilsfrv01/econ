@@ -1,6 +1,26 @@
 {
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
-    "gsap": "^3.12.7"
-  }
+    "aos": "^2.3.4",
+    "imagesloaded": "^5.0.0"
+  },
+  "name": "econ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramilsfrv01/econ.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramilsfrv01/econ/issues"
+  },
+  "homepage": "https://github.com/ramilsfrv01/econ#readme"
 }
