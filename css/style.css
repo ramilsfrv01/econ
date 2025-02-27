@@ -192,69 +192,19 @@ nav.navbar {
     background-color: black;
 }
 
-<<<<<<< HEAD
-
-.home-header .splide {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    padding: 0;
-}
-
-.home-header .splide__slide {
-    padding: 0;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-.splide__pagination {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.splide__pagination__page {
-    background: #fff;
-    width: 10px;
-    height: 10px;
-    opacity: 0.7;
-    margin: 0 5px;
-    display: inline-block !important;
-    border: none;
-    border-radius: 50%;
-    transition: transform .2s;
-}
-.splide__pagination__page.is-active {
-    background: #fcb401;
-    transform: scale(1.2);
-    opacity: 1;
-}
-.home-header .splide__arrow {
-    opacity: 0.5;
-    width: 46px;
-    height: 46px;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-=======
 .home-header .splide { 
->>>>>>> before-gsap
     width: 100%;
     height: 100%;
     overflow: hidden;
     padding: 0;
 }
 
-<<<<<<< HEAD
 .slide {
     width: 100%;
     height: 100%;
 }
 
 
-=======
 .home-header .splide__slide {
     background-size: cover !important;
     background-position: center !important;
@@ -265,7 +215,6 @@ nav.navbar {
 .home-header .splide__arrow--next {
     right: 8%;
 }
->>>>>>> before-gsap
 
 .home-header .splide__arrow--prev {
     left: 8%;
@@ -941,7 +890,6 @@ footer {
     z-index: 10;
 }
 
-<<<<<<< HEAD
 .splide__track {
     position: absolute;
     top: 0;
@@ -959,9 +907,6 @@ footer {
 }
 
 .home-header .splide__slide {
-=======
-.splide__slide {
->>>>>>> before-gsap
     padding: 0 10px;
     height: 100%;
 }
@@ -1103,18 +1048,6 @@ footer {
     display: none;
 }
 
-<<<<<<< HEAD
-.menu-close img {
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    top: 4%;
-    right: 10%;
-    cursor: pointer;
-    color: #fcb401
-}
-=======
->>>>>>> before-gsap
 
 .body-overlay {
     position: absolute;
@@ -1130,10 +1063,6 @@ footer {
 
 .mobile-navbar-overlay {
     position: fixed;
-<<<<<<< HEAD
-    /* Changed from absolute to fixed */
-=======
->>>>>>> before-gsap
     top: 0;
     left: 0;
     width: 100%;
@@ -1179,347 +1108,9 @@ footer {
     visibility: hidden;
     z-index: 24;
 }
-<<<<<<< HEAD
 
 #partner-slider {
     display: none;
 }
 
 /* ############################################# */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    .logo-header {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        padding: 10px 0;
-        width: 100%;
-    }
-
-    .header-overlay {
-        display: block;
-    }
-
-    .head-wrap {
-        display: none;
-    }
-
-    .logo {
-        padding: 16px 0;
-        width: 50%;
-    }
-
-    .quote-items {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .prev i,
-    .next i {
-        top: 50%;
-        font-size: 24px;
-        opacity: 0.5;
-    }
-
-    .prev {
-        left: 5%;
-    }
-
-    .next {
-        right: 5%;
-    }
-
-    .slide {
-        padding: 0 36px;
-    }
-
-    .slide-title * {
-        font-size: 12px;
-    }
-
-    .top-title {
-        font-size: 24px;
-    }
-
-    .wrap-bg {
-        padding: 18px 0;
-    }
-
-    .wrap-btn .main-button {
-        font-size: 10px;
-        width: 90px;
-        height: 30px;
-    }
-
-    .topic {
-        width: 50%;
-    }
-
-    .topic p {
-        font-size: 10px;
-    }
-
-    .services-wrap {
-        padding: 36px 0 18px;
-    }
-
-    .services-box {
-        margin-bottom: 96px;
-    }
-
-    .services-item {
-        height: 5.2rem;
-    }
-
-    .services-head h4 {
-        font-size: 12px;
-        padding-top: 9px;
-    }
-
-    .services-head span {
-        font-size: 10px;
-    }
-
-    .overlay i {
-        font-size: 24px;
-    }
-
-    .content-wrap {
-        padding: 36px 0 18px;
-    }
-
-    .splide__arrow {
-        width: 32px;
-        height: 32px;
-    }
-
-    .partner-wrap {
-        display: none;
-    }
-
-    .partner-box {
-        width: 100%;
-    }
-
-    .partner-box img {
-        width: 50%;
-    }
-
-
-
-    .content-box {
-        width: 100%;
-    }
-
-
-    .career-wrap {
-        flex-direction: column;
-    }
-
-    .career-box {
-        width: 100%;
-    }
-
-    footer {
-        padding-top: 48px;
-        padding-bottom: 24px;
-    }
-
-    .footer-logo {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
-
-    .footer-logo img {
-        width: 40px;
-        height: 40px;
-        margin: auto 0;
-    }
-
-    .logo-alt p {
-        font-size: 12px;
-        text-align: left;
-    }
-
-    .footer-links a {
-        font-size: 12px;
-    }
-
-    .footer-box h5 {
-        font-size: 12px;
-    }
-
-    .link {
-        padding-bottom: 4px;
-    }
-
-    .sector a {
-        padding-bottom: 4px;
-        font-size: 12px;
-    }
-
-    .footer-contact {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .footer-contact .top-contact-item a {
-        font-size: 8px;
-    }
-
-    .footer-contact .top-contact-item i {
-        display: none;
-    }
-
-    #partner-slider {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 60%;
-    }
-
-    .top-title {
-        font-size: 18px;
-    }
-
-    .main-right {
-        font-size: 22px;
-    }
-
-    h1.main-left {
-        font-size: 48px;
-    }
-
-    .slide-title {
-        width: 100%;
-    }
-
-    .slide-title p {
-        font-size: 12px;
-    }
-
-    .slide-title p i {
-        font-size: 12px;
-    }
-
-    .career-text p {
-        font-size: 12px;
-    }
-
-    .opening-job h5 {
-        font-size: 16px;
-    }
-
-    #partner-slider {
-        padding: 16px 0;
-        display: block;
-    }
-
-    .project-head h5 {
-        font-size: 22px;
-    }
-
-    .content-tabs-text {
-        font-size: 10px;
-    }
-
-    .content-text {
-        font-size: 12px;
-    }
-
-    section.content-section {
-        padding: 0;
-    }
-
-    .text-head {
-        padding-bottom: 10px;
-    }
-
-    .content-head h5 {
-        padding-top: 24px;
-        padding-bottom: 10px;
-    }
-
-    .services-box {
-        width: 100%;
-    }
-
-    .services-item {
-        height: 8rem;
-    }
-
-    .services-head h4 {
-        font-size: 10px;
-    }
-
-    .logo-alt p {
-        font-size: 8px;
-    }
-
-    .link a {
-        font-size: 9px;
-        padding-bottom: 0;
-    }
-
-    .link {
-        padding-bottom: 0;
-    }
-
-    .footer-links h5 {
-        font-size: 10px;
-    }
-
-    .footer-box h5 {
-        font-size: 10px;
-        padding-bottom: 0;
-    }
-
-    .footer-contact .top-contact-item a {
-        font-size: 6px;
-    }
-
-    .footer-logo img {
-        width: 25px;
-        height: 25px;
-        border-radius: 6px;
-    }
-
-    .footer-logo p {
-        font-size: 8px;
-    }
-
-    .footer-box:has(> .footer-contact) {
-        display: none;
-    }
-
-    .footer-box {
-        width: 30%;
-    }
-
-    .footer-box:has(> .footer-contact) {
-        display: none;
-    }
-}
-=======
-
-#partner-slider {
-    display: none;
-}
-
-/* ############################################# */
->>>>>>> before-gsap
