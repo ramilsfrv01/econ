@@ -290,7 +290,6 @@ nav.navbar {
     color: #ebebeb;
     padding: 40px 0 10px;
     text-transform: capitalize;
-    transform: scale(0);
     transition: 0.4s ease-out;
     transition-delay: transform 0.2s;
 }
@@ -347,8 +346,6 @@ section.services {
     width: 100%;
     flex-wrap: wrap;
     padding: 64px 0px;
-    opacity: 0;
-    transform: translateY(-50px);
 }
 
 .services-box {
@@ -544,6 +541,7 @@ section.project-section::after {
 
 .project-head {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .project-head a {

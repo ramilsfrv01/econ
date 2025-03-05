@@ -1,7 +1,4 @@
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 
-// AOS.init();
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#header-slider' , {
@@ -80,5 +77,7 @@ function closeMobileNav() {
   document.querySelector('.mobile-navbar-overlay').classList.remove('body-overlay');
 }
 
-
+sal({
+  threshold: 0.45,
+});
 

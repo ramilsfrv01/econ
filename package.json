@@ -1,14 +1,13 @@
 {
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
-    "aos": "^2.3.4",
-    "imagesloaded": "^5.0.0"
+    "imagesloaded": "^5.0.0",
+    "sal.js": "^0.8.5"
   },
   "name": "econ",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

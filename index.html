@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
+    <!-- <link rel="stylesheet" href="node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"> -->
 </head>
 
 <body>
@@ -23,16 +25,16 @@
         <div class="container">
             <div class="top">
                 <div class="contact">
-                    <div class="top-contact-item">
+                    <div class="top-contact-item" data-sal="slide-up" data-sal-duration="300">
                         <i class="fa-solid fa-phone"></i>
                         <a href="tel:+994503478614">
                             +994 50 347 86 14</a>
                     </div>
-                    <div class="top-contact-item">
+                    <div class="top-contact-item" data-sal="slide-up" data-sal-duration="300">
                         <i class="fa-solid fa-clock"></i>
                         <span>Mon - Fri 09:00 - 18:00</span>
                     </div>
-                    <div class="top-contact-item">
+                    <div class="top-contact-item" data-sal="slide-up" data-sal-duration="300">
                         <i class="fa-solid fa-location-dot"></i>
                         <a href="https://maps.app.goo.gl/5Pevkg7Ea4Qzuxtg6" target="_blank">
                             <span> 249 A. Hasan Aliyev st., Baku, AZ1078</span>
@@ -150,30 +152,30 @@
         <div class="splide" id="header-slider" aria-labelledby="carousel-heading">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide" style="background: url('./upload/slider-1.jpg');">
+                    <li class="splide__slide" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" style="background: url('./upload/slider-1.jpg');">
                         <div class="container">
-                            <div class="slide-title">
-                                <span class="top-title">New Service Offered</span>
+                            <div class="slide-title" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sal-delay="300">
+                                <span class="top-title">Workforce Solutions for Global Projects</span>
                                 <h1>ECONGroup</h1>
-                                <p>Your satisfaction is our priority.></p>
+                                <p>Delivering certified scaffolders, welders, and insulators to meet the demands of international projects with efficiency and expertise.</p>
                             </div>
                         </div>
                     </li>
-                    <li class="splide__slide" style="background: url('./upload/slider-2.jpg');">
+                    <li class="splide__slide" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" style="background: url('./upload/slider-2.jpg');">
                         <div class="container">
-                            <div class="slide-title">
-                                <span class="top-title">New Service Offered</span>
-                                <h1>ECONGroup</h1>
-                                <p>Your satisfaction is our priority.></p>
+                            <div class="slide-title" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sal-delay="300">
+                                <span class="top-title">Training & Certification Excellence</span>
+                                <h1>Scaffolding Works</h1>
+                                <p>Our in-house training center ensures that every worker is fully equipped with the latest skills and industry certifications.</p>
                             </div>
                         </div>
                     </li>
-                    <li class="splide__slide" style="background: url('./upload/slider-3.jpg');">
+                    <li class="splide__slide" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" style="background: url('./upload/slider-3.jpg');">
                         <div class="container">
-                            <div class="slide-title">
-                                <span class="top-title">New Service Offered</span>
+                            <div class="slide-title" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sal-delay="300">
+                                <span class="top-title">Reliable Partner in Workforce Supply</span>
                                 <h1>ECONGroup</h1>
-                                <p>Your satisfaction is our priority</p>
+                                <p>With a strong network of global industry partners, we provide a seamless workforce solution to keep your projects running on time.</p>
                             </div>
                         </div>
                     </li>
@@ -183,14 +185,14 @@
     </header>
     <section class="top-wrap">
         <div class="wrap-bg">
-            <div class="container">
-                <div class="topic-box">
-                    <div class="topic">
+            <div class="container data-scroll-container">
+                <div class="topic-box data-scroll-section">
+                    <div class="topic data-scroll" data-sal="slide-right" style="--sal-duration: 0.5s;">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iure vel earum iusto nequ.
                         </p>
                     </div>
-                    <div class="wrap-btn">
-                        <a href="" class="main-button">
+                    <div class="wrap-btn data-scroll" data-sal="slide-left" style="--sal-duration: 0.5s;">
+                        <a href="services.html" class="main-button"> <!-- Updated link to services page -->
                             Learn More
                         </a>
                     </div>
@@ -202,7 +204,7 @@
         <div class="container">
             <div class="services-wrap" id="services-wrap">
                 <div class="services-box">
-                    <div class="services-item">
+                    <div class="services-item" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">
                         <div class="services-bg">
                             <img src="./upload/service-scff.jpeg" alt="Scaffolding Services">
                             <div class="overlay">
@@ -210,14 +212,14 @@
                                 <i class="fa-solid fa-link"></i>
                             </div>
                         </div>
-                        <div class="services-head">
-                            <h4>Scaffolding Services</h4>
-                            <span>Advanced Layher Placement</span>
+                        <div class="services-head" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sel-delay="400">
+                            <h4>Scaffolding</h4>
+                            <span>Safe and efficient access solutions for industrial projects</span>
                         </div>
                     </div>
                 </div>
                 <div class="services-box">
-                    <div class="services-item">
+                    <div class="services-item" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">
                         <div class="services-bg">
                             <img src="./upload/service-wldr.jpeg" alt="Scaffolding Services">
                             <div class="overlay">
@@ -225,14 +227,14 @@
                                 <i class="fa-solid fa-link"></i>
                             </div>
                         </div>
-                        <div class="services-head">
-                            <h4>Welding Works</h4>
-                            <span>Acquired MIG/MAG professionals</span>
+                        <div class="services-head" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sel-delay="400">
+                            <h4>Welding</h4>
+                            <span>Certified structural and pipeline welding with precision.</span>
                         </div>
                     </div>
                 </div>
                 <div class="services-box">
-                    <div class="services-item">
+                    <div class="services-item" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">
                         <div class="services-bg">
                             <img src="./upload/service-scff.jpeg" alt="Scaffolding Services">
                             <div class="overlay">
@@ -240,14 +242,14 @@
                                 <i class="fa-solid fa-link"></i>
                             </div>
                         </div>
-                        <div class="services-head">
-                            <h4>Insulation / Installing </h4>
-                            <span>Advanced Layher Placement</span>
+                        <div class="services-head" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sel-delay="400">
+                            <h4>Insulation</h4>
+                            <span>Thermal, acoustic, and fireproofing solutions.</span>
                         </div>
                     </div>
                 </div>
                 <div class="services-box">
-                    <div class="services-item">
+                    <div class="services-item" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">
                         <div class="services-bg">
                             <img src="./upload/service-scff.jpeg" alt="Scaffolding Services">
                             <div class="overlay">
@@ -255,42 +257,42 @@
                                 <i class="fa-solid fa-link"></i>
                             </div>
                         </div>
-                        <div class="services-head">
+                        <div class="services-head" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sel-delay="400">
+                            <h4>Training & Certification</h4>
+                            <span>Industry-leading education and certification.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <div class="services-item" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">
+                        <div class="services-bg">
+                            <img src="./upload/service-scff.jpeg" alt="Scaffolding Services">
+                            <div class="overlay">
+                                <a href="scaffolding.html"></a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="services-head" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sel-delay="400">
+                            <h4>Workforce Supply</h4>
+                            <span>Skilled professionals ready for global deployment.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="services-box">
+                    <div class="services-item" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">
+                        <div class="services-bg">
+                            <img src="./upload/service-scff.jpeg" alt="Scaffolding Services">
+                            <div class="overlay">
+                                <a href="scaffolding.html"></a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="services-head" data-sal="fade" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sel-delay="400">
                             <h4>Scaffolding Services</h4>
                             <span>Advanced Layher Placement</span>
                         </div>
                     </div>
-                </div>
-                <div class="services-box">
-                    <div class="services-item">
-                        <div class="services-bg">
-                            <img src="./upload/service-scff.jpeg" alt="Scaffolding Services">
-                            <div class="overlay">
-                                <a href="scaffolding.html"></a>
-                                <i class="fa-solid fa-link"></i>
-                            </div>
-                        </div>
-                        <div class="services-head">
-                            <h4>Scaffolding Services</h4>
-                            <span>Advanced Layher Placement</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="services-item">
-                        <div class="services-bg">
-                            <img src="./upload/service-scff.jpeg" alt="Scaffolding Services">
-                            <div class="overlay">
-                                <a href="scaffolding.html"></a>
-                                <i class="fa-solid fa-link"></i>
-                            </div>
-                        </div>
-                        <div class="services-head">
-                            <h4>Scaffolding Services</h4>
-                            <span>Advanced Layher Placement</span>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -299,15 +301,13 @@
             <div class="content-wrap">
                 <div class="content-box">
                     <div class="content-head">
-                        <h5>Who We Are</h5>
+                        <h5 data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">Who We Are</h5>
                     </div>
                     <div class="content-pic">
-                        <img src="upload/service-12.jpg" alt="">
+                        <img src="upload/service-12.jpg" alt="" data-sal="slide-right" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sal-delay="200">
                     </div>
                     <div class="content-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit expedita repellendus eum
-                            aliquam, magni cupiditate saepe minima recusandae? Temporibus inventore eum aut aliquid non
-                            culpa. Repudiandae nam ut est.</p>
+                        <p data-sal="slide-down" data-sal-easing="ease-out-quint" data-sal-duration="1000" data-sal-delay="250">We are a trusted provider of skilled scaffolders, welders, and insulators, delivering workforce solutions to international projects. With our dedicated training center and industry-recognized certification programs, we ensure that every worker meets the highest standards of professionalism and expertise.</p>
                     </div>
                     <div class="content-btn">
                         <a href="" class="main-button">
@@ -317,21 +317,19 @@
                 </div>
                 <div class="content-box">
                     <div class="content-head">
-                        <h5>why choose us</h5>
+                        <h5 data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">why choose us</h5>
                     </div>
                     <div class="content-tabs">
                         <div class="content-tab">
                             <div class="content-icon">
-                                <i class="fa-solid fa-people-group"></i>
+                                <i class="fa-solid fa-people-group" data-sal="slide-left" data-sal-duration="1000" data-sal-easing="ease-out-quint"></i>
                             </div>
                             <div class="content-tabs-text">
                                 <div class="text-head">
-                                    <h5>talent sourcing</h5>
+                                    <h5 data-sal="slide-left" data-sal-duration="1000" data-sal-easing="ease-out-quint">Certified & Skilled Workforce</h5>
                                 </div>
                                 <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit expedita
-                                        repellendus eum aliquam, magni cupiditate saepe minima recusandae? Temporibus
-                                        inventore eum aut aliquid non culpa. Repudiandae nam ut est.</p>
+                                    <p data-sal="slide-down" data-sal-duration="1000" data-sal-easing="ease-out-quint" data-sal-delay="150">Every worker undergoes rigorous training, hands-on assessments, and industry-recognized certification to ensure they meet global standards of quality and expertise.</p>
                                 </div>
                             </div>
                         </div>
@@ -339,16 +337,14 @@
                     <div class="content-tabs">
                         <div class="content-tab">
                             <div class="content-icon">
-                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <i class="fa-solid fa-screwdriver-wrench" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="200" data-sal-easing="ease-out-quint"></i>
                             </div>
                             <div class="content-tabs-text">
                                 <div class="text-head">
-                                    <h5>Training / Certification</h5>
+                                    <h5 data-sal="slide-left" data-sal-duration="1000" data-sal-delay="200" data-sal-easing="ease-out-quint">Seamless International Deployment</h5>
                                 </div>
                                 <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit expedita
-                                        repellendus eum aliquam, magni cupiditate saepe minima recusandae? Temporibus
-                                        inventore eum aut aliquid non culpa. Repudiandae nam ut est.</p>
+                                    <p data-sal="slide-down" data-sal-duration="1000" data-sal-delay="250" data-sal-easing="ease-out-quint">We handle the entire workforce process, from recruitment and training to certification and placement, ensuring a smooth transition to international projects.</p>
                                 </div>
                             </div>
                         </div>
@@ -356,16 +352,14 @@
                     <div class="content-tabs">
                         <div class="content-tab">
                             <div class="content-icon">
-                                <i class="fa-solid fa-industry"></i>
+                                <i class="fa-solid fa-industry" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="300" data-sal-easing="ease-out-quint"></i>
                             </div>
                             <div class="content-tabs-text">
                                 <div class="text-head">
-                                    <h5>Industry Elevating</h5>
+                                    <h5 data-sal="slide-left" data-sal-duration="1000" data-sal-delay="300" data-sal-easing="ease-out-quint">Commitment to Quality & Safety</h5>
                                 </div>
                                 <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit expedita
-                                        repellendus eum aliquam, magni cupiditate saepe minima recusandae? Temporibus
-                                        inventore eum aut aliquid non culpa. Repudiandae nam ut est.</p>
+                                    <p data-sal="slide-down" data-sal-duration="1000" data-sal-delay="350" data-sal-easing="ease-out-quint">We prioritize efficiency and workplace safety, following strict industry regulations and best practices to deliver reliable workforce solutions for every project.</p>
                                 </div>
                             </div>
                         </div>
@@ -468,29 +462,27 @@
     <section class="career-section">
         <div class="container">
             <div class="career-head">
-                <h5>Career & Jobs</h5>
+                <h5 data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="1000">Career & Jobs</h5>
             </div>
             <div class="career-wrap">
                 <div class="career-box">
                     <div class="career-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit expedita repellendus eum
-                            aliquam, magni cupiditate saepe minima recusandae? Temporibus inventore eum aut aliquid non
-                            culpa. Repudiandae nam ut est.</p>
+                        <p data-sal="slide-right" data-sal-duration="1000" data-sal-easing="ease-out-quint">Are you looking for a rewarding career in scaffolding, welding, or insulation? We provide top-tier training, global opportunities, and a supportive work environment to help you grow. Become part of a professional team that builds the future of international projects. Apply today and take your career to the next level!.</p>
                     </div>
                 </div>
                 <div class="career-box">
                     <div class="opening-job">
-                        <h5>Scaffold Technician
+                        <h5 data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease-out-quint" data-sal-delay="300">Scaffold Technician
                             <a href="careers.html"></a>
                         </h5>
                     </div>
                     <div class="opening-job">
-                        <h5>Insulator
+                        <h5 data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease-out-quint" data-sal-delay="350">Insulator
                             <a href="careers.html"></a>
                         </h5>
                     </div>
                     <div class="career-btn">
-                        <a href="" class="main-button">
+                        <a href="careers.html" class="main-button" data-sal="fade" data-sal-duration="1000" data-sal-easing="ease-out-quint" data-sal-delay="400">
                             See Open Positions
                         </a>
                     </div>
@@ -501,30 +493,30 @@
     <footer>
         <div class="container">
             <div class="footer-wrap">
-                <div class="footer-box">
+                <div class="footer-box" data-sal="slide-right" data-sal-easing="ease-out-quint" data-sal-duration="300">
                     <div class="footer-logo">
                         <img src="images/e.svg" alt="ECONGroup">
                     </div>
                     <div class="logo-alt">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Skilled. Certified. Reliable. - Powering global projects with expert workforce solutions.</p>
                     </div>
                 </div>
                 <div class="footer-box">
                     <div class="footer-links">
                         <h5>Quick Links</h5>
-                        <div class="link">
+                        <div class="link" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300">
                             <a href="index.html">Home</a>
                         </div>
-                        <div class="link">
+                        <div class="link" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300" data-sal-delay="100">
                             <a href="about.html">About</a>
                         </div>
-                        <div class="link">
+                        <div class="link" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300" data-sal-delay="120">
                             <a href="careers.html">Careers</a>
                         </div>
-                        <div class="link">
+                        <div class="link" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300" data-sal-delay="140">
                             <a href="project.html">Projects</a>
                         </div>
-                        <div class="link">
+                        <div class="link" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300" data-sal-delay="160">
                             <a href="contact.html">Contact</a>
                         </div>
                     </div>
@@ -532,29 +524,32 @@
                 <div class="footer-box">
                     <div class="footer-sectors">
                         <h5>Our Sectors</h5>
-                        <div class="link sector">
+                        <div class="link sector" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300">
                             <a href="scaffolding.html">Scaffolding</a>
                         </div>
-                        <div class="link sector">
+                        <div class="link sector" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300" data-sal-delay="100">
                             <a href="welding.html">Welding</a>
                         </div>
-                        <div class="link sector">
+                        <div class="link sector" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300" data-sal-delay="120">
                             <a href="insulating.html">Insulating</a>
+                        </div>
+                        <div class="link sector" data-sal="slide-up" data-sal-easing="ease-out-quint" data-sal-duration="300" data-sal-delay="140">
+                            <a href="scaffolding.html">Scaffolding</a>
                         </div>
                     </div>
                 </div>
                 <div class="footer-box">
                     <div class="footer-contact">
-                        <div class="top-contact-item">
+                        <div class="top-contact-item" data-sal="slide-up" data-sal-duration="300">
                             <i class="fa-solid fa-phone"></i>
                             <a href="tel:+994503478614">
                                 +994 50 347 86 14</a>
                         </div>
-                        <div class="top-contact-item">
+                        <div class="top-contact-item" data-sal="slide-up" data-sal-duration="300" data-sal-delay="100">
                             <i class="fa-solid fa-envelope"></i>
                             <span><a href="mailto:info@econstructiongroup.com">info@econstructiongroup.com</a></span>
                         </div>
-                        <div class="top-contact-item">
+                        <div class="top-contact-item" data-sal="slide-up" data-sal-duration="300" data-sal-delay="120">
                             <i class="fa-solid fa-location-dot"></i>
                             <a href="https://maps.app.goo.gl/5Pevkg7Ea4Qzuxtg6" target="_blank">
                                 <span> 249 A. Hasan Aliyev st., Baku, AZ1078</span>
@@ -568,7 +563,11 @@
 
     <script type="module" src="node_modules/@splidejs/splide/dist/js/splide.min.js" defer></script>
     <script src="https://kit.fontawesome.com/9c029c00c1.js" crossorigin="anonymous"></script>
+    <script src="node_modules/sal.js/dist/sal.js"></script>
     <script type="module" src="js/script.js" defer></script>
+    <script>
+        sal();
+    </script>
 </body>
 
 </html>
