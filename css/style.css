@@ -194,6 +194,9 @@ nav.navbar {
 }
 
 
+
+
+
 .home-header .splide {
     height: 100%;
     width: 100%;
@@ -202,11 +205,27 @@ nav.navbar {
 }
 
 .home-header .splide__slide {
+    position: relative;
+    overflow: hidden;
     padding: 0;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
 }
+.home-header .slide-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.home-header .splide__slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    z-index: 2;
+}
+
 .splide__pagination {
     display: flex !important;
     justify-content: center;
@@ -283,20 +302,25 @@ nav.navbar {
     color: #fcb401;
     line-height: 1;
     transition: .5s ease;
+    position: relative;
+    z-index: 3;
 }
+
 .top-title {
-    font-size: 32px;
+    font-size: 23px;
     font-weight: 500;
     color: #ebebeb;
     padding: 40px 0 10px;
     text-transform: capitalize;
     transition: 0.4s ease-out;
     transition-delay: transform 0.2s;
+    padding-bottom: 18px;
 }
 
+  
 .slide-title h1 {
-    font-size: 73px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 500;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -305,9 +329,13 @@ nav.navbar {
 
 .slide-title p {
     font-size: 18px;
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1.5;
     padding: 40px 0 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    
 }
 
 .slide-title p i {
@@ -334,6 +362,7 @@ section.top-wrap {
 .topic p {
     color: #000;
     font-weight: 400;
+    font-size: 24px;
 }
 
 section.services {
@@ -518,7 +547,7 @@ section.content-section {
 }
 
 section.project-section {
-    background: url(../upload/project-bg.jpg) no-repeat center;
+    background: url(../upload/project-bg.webp) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     padding: 48px 0 0;
@@ -702,7 +731,7 @@ section.project-section {
 }
 
 section.career-section {
-    background: url(../upload/career-bg.jpg) no-repeat center;
+    background: url(../upload/career-bg.webp) no-repeat center;
     background-size: cover;
     padding: 48px 0;
     position: relative;
@@ -736,6 +765,7 @@ section.career-section {
     color: #fff;
     padding-bottom: 38px;
     text-align: justify;
+    font-weight: 300;
 }
 
 .career-btn {
@@ -780,6 +810,7 @@ section.career-section {
 
 .opening-job h5 {
     position: relative;
+    font-weight: 500;
 }
 
 .opening-job a {
@@ -909,7 +940,7 @@ footer {
     position: relative;
     height: 100%;
     width: 100%;
-    z-index: 10;
+    z-index: 13;
 }
 
 .splide__slide {
@@ -935,11 +966,11 @@ footer {
 }
 
 .splide__arrow--next {
-    right: 2rem;
+    right: 0rem;
 }
 
 .splide__arrow--prev {
-    left: 2rem;
+    left: 0rem;
 }
 
 .splide__pagination {

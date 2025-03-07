@@ -269,4 +269,9 @@
     #partner-slider {
         display: block;
     }
+
+    .slide-title p {
+        width: 100%;
+    }
+
 }
