@@ -1,5 +1,5 @@
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -828,7 +828,7 @@ section.career-section {
 }
 
 footer {
-    background-color: #000;
+    background-color: #2e2e2e;
     color: #fff;
     padding: 48px 0;
 }
@@ -842,11 +842,17 @@ footer {
     right: 0;
     bottom: 0;
 }
+.footer-bottom {
+    text-align: center;
+    background-color:#000;
+    color:rgb(204, 204, 204);
+    padding: 32px 0;
+}
 
 
 .footer-contact .top-contact-item a {
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 0.2px;
 }
 
@@ -873,7 +879,6 @@ footer {
 .footer-logo img {
     width: 56px;
     height: 56px;
-    margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -881,7 +886,6 @@ footer {
 .logo-alt p {
     font-size: 14px;
     padding: 16px 0;
-    text-align: center;
 }
 
 .footer-links {
@@ -921,6 +925,7 @@ footer {
     font-size: 18px;
     padding-bottom: 16px;
     font-weight: 500;
+    color: #fcb401;
 }
 
 .sector a {
@@ -1155,39 +1160,154 @@ footer {
     background: url('../upload/slider-1.webp') no-repeat center center/cover;
     padding: 100px 0;
     text-align: center;
+    height: 100vh;
     color: white;
 }
 
+.page-header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .page-header h1 {
-    font-size: 36px;
+    font-size: 64px;
     margin-bottom: 10px;
 }
 .page-header p {
-    font-size: 18px;
+    font-size: 32px;
+    /* color:#fcb401; */
 }
 
-.about-intro, .about-mission, .about-values, .about-services {
-    background: white;
-    padding: 50px 0;
-    margin: 20px 0;
+.about-intro, .about-mission, .about-values, .about-services, .why-choose-us {
+    /* background: white; */
+    /* padding: 50px 0; */
+    /* margin: 20px 0; */
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    transition: .3s ease;
+    position: relative;
 }
 
-.about-intro img, .about-mission img, .about-values img {
-    width: 40%;
-    border-radius: 8px;
+
+.about-services, .about-values, .why-choose-us, .about-safety {
+    padding: 64px 0;
+}
+.about-services h2, .about-values h2, .why-choose-us h2, .about-safety h2 {
+    padding-bottom: 36px;
 }
 .about-text {
     width: 55%;
+}
+.why-choose-us  p {
+    padding-bottom: 24px;
+}
+.feature-box p {
+    padding-left: 31px;
 }
 .about-intro:hover, .about-mission:hover, .about-values:hover, .about-services:hover {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
+.about-intro {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about-intro .container, .about-mission .container  {
+    height: initial;
+    display: inline-grid;
+}
+.about-bg {
+    background: url('../upload/slider-1.webp') no-repeat center center/cover;
+    position: absolute;
+    inset: 0;
+    /* z-index: -1; */
+    width: 50%;
+}
+.about-mission {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mission-bg {
+    background: url('../upload/slider-2.webp') no-repeat center center/cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    color: white;
+}
+.mission-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000a1;
+}
+.timeline {
+    position: relative;
+    color:#fff;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 48px;
+    height: 100%;
+}
+.timeline-item {
+    padding: 24px 0;
+    position: relative;
+}
+
+.timeline-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background-color: #fcb401;
+    border-radius: 32px;
+    left: 16px;
+    bottom: -14px;
+}
+.mission-bg .container  {
+    height: 100%;
+}
+.about-mission .container .about-content {
+    justify-self: flex-start;
+    height: 100%;
+    align-self: center;
+}
+.about-content {
+    width: 45%;
+    justify-self: flex-end;
+}
+.about-content p {
+    padding: 20px 0;
+    color:#353535;
+    font-weight: 300;
+}
+.key-points {
+    color:#353535;
+    font-weight: 300;
+}
+.about-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .about-values ul {
     list-style-type: none;
     padding: 0;
@@ -1200,8 +1320,9 @@ footer {
     font-size: 18px;
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    text-align: left;
     gap: 10px;
+    width: 32%;
 }
 .about-values li i {
     color: #fcb401;
@@ -1212,7 +1333,6 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     text-align: center;
-    padding: 20px;
 }
 .service-item {
     background: #fff;
@@ -1232,6 +1352,7 @@ footer {
     color: #222;
     font-size: 20px;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 .service-item h3 {
     color: #222;
@@ -1248,8 +1369,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 50px 20px;
-    border-radius: 8px;
-    margin: 20px 0;
+    margin: 28px 0 0;
 }
 .about-cta h2 {
     font-size: 28px;
