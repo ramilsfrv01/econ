@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "econgroup.az",
+  "Id": "3458ca93-485a-4051-aab1-43f1e695afc3"
+}
