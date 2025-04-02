@@ -183,7 +183,7 @@ nav.navbar {
 
 .nav-item a {
     display: block;
-    
+
 }
 
 .home-header {
@@ -210,6 +210,7 @@ nav.navbar {
     overflow: hidden;
     padding: 0;
 }
+
 .home-header .slide-bg {
     background-size: cover;
     background-position: center;
@@ -223,7 +224,8 @@ nav.navbar {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay for contrast */
     z-index: 2;
 }
 
@@ -233,6 +235,7 @@ nav.navbar {
     align-items: center;
     width: 100%;
 }
+
 .splide__pagination__page {
     background: #fff;
     width: 10px;
@@ -244,11 +247,13 @@ nav.navbar {
     border-radius: 50%;
     transition: transform .2s;
 }
+
 .splide__pagination__page.is-active {
     background: #fcb401;
     transform: scale(1.2);
     opacity: 1;
 }
+
 .home-header .splide__arrow {
     opacity: 0.5;
     width: 46px;
@@ -260,7 +265,7 @@ nav.navbar {
     transition: transform 0.5s ease-in-out;
 }
 
-.home-header .splide { 
+.home-header .splide {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -288,7 +293,8 @@ nav.navbar {
     left: 25px;
 }
 
-.home-header .splide__track ,.home-header .splide__list {
+.home-header .splide__track,
+.home-header .splide__list {
     height: 100%;
 }
 
@@ -318,7 +324,7 @@ nav.navbar {
     padding-bottom: 18px;
 }
 
-  
+
 .slide-title h1 {
     font-size: 48px;
     font-weight: 500;
@@ -336,7 +342,7 @@ nav.navbar {
     padding: 40px 0 10px;
     color: #fff;
     letter-spacing: 1px;
-    
+
 }
 
 .slide-title p i {
@@ -842,10 +848,11 @@ footer {
     right: 0;
     bottom: 0;
 }
+
 .footer-bottom {
     text-align: center;
-    background-color:#000;
-    color:rgb(204, 204, 204);
+    background-color: #000;
+    color: rgb(204, 204, 204);
     padding: 32px 0;
 }
 
@@ -1175,12 +1182,17 @@ footer {
     font-size: 64px;
     margin-bottom: 10px;
 }
+
 .page-header p {
     font-size: 32px;
     /* color:#fcb401; */
 }
 
-.about-intro, .about-mission, .about-values, .about-services, .why-choose-us {
+.about-intro,
+.about-mission,
+.about-values,
+.about-services,
+.why-choose-us {
     /* background: white; */
     /* padding: 50px 0; */
     /* margin: 20px 0; */
@@ -1194,22 +1206,36 @@ footer {
 }
 
 
-.about-services, .about-values, .why-choose-us, .about-safety {
+.about-services,
+.about-values,
+.why-choose-us,
+.about-safety {
     padding: 64px 0;
 }
-.about-services h2, .about-values h2, .why-choose-us h2, .about-safety h2 {
+
+.about-services h2,
+.about-values h2,
+.why-choose-us h2,
+.about-safety h2 {
     padding-bottom: 36px;
 }
+
 .about-text {
     width: 55%;
 }
-.why-choose-us  p {
+
+.why-choose-us p {
     padding-bottom: 24px;
 }
+
 .feature-box p {
     padding-left: 31px;
 }
-.about-intro:hover, .about-mission:hover, .about-values:hover, .about-services:hover {
+
+.about-intro:hover,
+.about-mission:hover,
+.about-values:hover,
+.about-services:hover {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -1219,10 +1245,13 @@ footer {
     justify-content: flex-end;
     align-items: center;
 }
-.about-intro .container, .about-mission .container  {
+
+.about-intro .container,
+.about-mission .container {
     height: initial;
     display: inline-grid;
 }
+
 .about-bg {
     background: url('../upload/slider-1.webp') no-repeat center center/cover;
     position: absolute;
@@ -1230,12 +1259,14 @@ footer {
     /* z-index: -1; */
     width: 50%;
 }
+
 .about-mission {
     height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .mission-bg {
     background: url('../upload/slider-2.webp') no-repeat center center/cover;
     position: absolute;
@@ -1245,6 +1276,7 @@ footer {
     width: 50%;
     color: white;
 }
+
 .mission-bg::after {
     content: "";
     position: absolute;
@@ -1254,9 +1286,10 @@ footer {
     bottom: 0;
     background: #000000a1;
 }
+
 .timeline {
     position: relative;
-    color:#fff;
+    color: #fff;
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -1266,6 +1299,7 @@ footer {
     padding-left: 48px;
     height: 100%;
 }
+
 .timeline-item {
     padding: 24px 0;
     position: relative;
@@ -1281,33 +1315,40 @@ footer {
     left: 16px;
     bottom: -14px;
 }
-.mission-bg .container  {
+
+.mission-bg .container {
     height: 100%;
 }
+
 .about-mission .container .about-content {
     justify-self: flex-start;
     height: 100%;
     align-self: center;
 }
+
 .about-content {
     width: 45%;
     justify-self: flex-end;
 }
+
 .about-content p {
     padding: 20px 0;
-    color:#353535;
+    color: #353535;
     font-weight: 300;
 }
+
 .key-points {
-    color:#353535;
+    color: #353535;
     font-weight: 300;
 }
+
 .about-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
+
 .about-values ul {
     list-style-type: none;
     padding: 0;
@@ -1316,6 +1357,7 @@ footer {
     justify-content: center;
     gap: 20px;
 }
+
 .about-values li {
     font-size: 18px;
     margin-bottom: 10px;
@@ -1324,16 +1366,19 @@ footer {
     gap: 10px;
     width: 32%;
 }
+
 .about-values li i {
     color: #fcb401;
     font-size: 24px;
 }
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     text-align: center;
 }
+
 .service-item {
     background: #fff;
     padding: 20px;
@@ -1343,17 +1388,20 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 .service-item i {
     font-size: 36px;
     color: #fcb401;
     margin-bottom: 10px;
 }
+
 .service-item h3 {
     color: #222;
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 500;
 }
+
 .service-item h3 {
     color: #222;
     font-size: 20px;
@@ -1364,6 +1412,7 @@ footer {
     font-size: 16px;
     color: #555;
 }
+
 .about-cta {
     background: #fcb401;
     color: #fff;
@@ -1371,9 +1420,11 @@ footer {
     padding: 50px 20px;
     margin: 28px 0 0;
 }
+
 .about-cta h2 {
     font-size: 28px;
 }
+
 .about-cta .main-button {
     display: inline-flex;
     padding: 6px 12px;
